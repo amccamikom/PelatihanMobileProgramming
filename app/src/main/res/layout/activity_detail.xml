@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_back_24" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_back"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        tools:text="Saturday 29 Nov 2021" />
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_back"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/tv_date"
+        tools:text=" - Technology" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_category"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Tim AMCC Raih Medali Emas Di Singapore" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_img_banner"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginHorizontal="16dp"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tim_amcc" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_img_banner"
+            tools:text="Tim AMCC (Amikom Computer Club) selaku perwakilan
+Universitas Amikom Yogyakarta untuk kategori ICT berhasil meraih medali
+emas setelah mengalahkan lebih dari 80 tim lainnya dari 10 negara peserta
+AIGC, termasuk diantaranya Jepang, Ukraina, China,Egypt, Thailand, dan
+lain-lain.
+Pada babak final, tim AMCC yang beranggotakan Syekh Arpi Ageng (Product
+Manager), Sandy Priyatna (Programmer), Ali Rahmat Ismail (Programmer)
+serta Riana Anggita Saputri (Designer) mempresentasikan sebuah produk
+aplikasi yang berguna untuk menyediakan layanan angkutan sampah yang
+bernama “Matrash”. Produk yang masih dalam tahap pengembangan ini sudah
+melalui tahap riset dan validasi pasar serta pendampingan yang dilakukan
+oleh Kampus ( Universitas Amikom Yogyakarta) secara intensif selama 4
+bulan." />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

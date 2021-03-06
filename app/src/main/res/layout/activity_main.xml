@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-<!--   TAMPILKAN VIEW IMAGEVIEW DI TENGAH LAYOUT  MENGGUNAKAN-->
-<!--    LAYOUT LINEARLAYOUT-->
+    <data>
 
-<!--    langkah-langkahnya-->
+    </data>
 
-<!--    1. Rubah layout contraint menjadi linear layout
-        2. tambahkan view ImageView untuk menampilkan gambar
-        3. dan tammpilka gambar di tengah layout
-                                                        -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

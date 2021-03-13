@@ -9,23 +9,10 @@ import com.amccmember.appsnews.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
 
-
-    private lateinit var binding : ActivityLoginBinding
-
+    private lateinit var binding: ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding =DataBindingUtil.setContentView(this,R.layout.activity_login)
-
-        binding.etInputUsername
-        binding.etInputPassword
-
-        binding.btnLogin.setOnClickListener {
-
-        }
-
-
-
-
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_login)
     }
 }

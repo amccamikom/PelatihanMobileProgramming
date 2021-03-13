@@ -8,16 +8,14 @@ import com.amccmember.appsnews.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-
-    
-    private lateinit var binding : ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     private val TAG = "Mainactivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding =DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        Log.d(TAG,"OnCreate : Berhasil dijalankan")
+        Log.d(TAG, "OnCreate : Berhasil dijalankan")
     }
 
     override fun onResume() {

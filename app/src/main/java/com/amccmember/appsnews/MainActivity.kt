@@ -8,42 +8,45 @@ import com.amccmember.appsnews.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
-    private val TAG = "MainActivity"
+
+    
+    private lateinit var binding : ActivityMainBinding
+    private val TAG = "Mainactivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        Log.i(TAG, "onCreate: berhasil dijalankan")
+        binding =DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        Log.d(TAG,"OnCreate : Berhasil dijalankan")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.i(TAG, "onResume: berhasil dijalankan")
+        Log.d(TAG, "onResume: berhasil dijalankan")
     }
 
     override fun onStart() {
         super.onStart()
-        Log.i(TAG, "onStart: berhasil dijalankan")
+        Log.d(TAG, "onStart: berhasil dijalankan")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.i(TAG, "onDestroy: berhasil dijalankan")
+        Log.d(TAG, "onDestroy: berhasil dijalankan")
     }
 
     override fun onRestart() {
         super.onRestart()
-        Log.i(TAG, "onRestart: berhasil dijalankan")
+        Log.d(TAG, "onRestart: berhasil dijalankan")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.i(TAG, "onStop: berhasil dijalankan")
+        Log.d(TAG, "onStop: berhasil dijalankan")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.i(TAG, "onPause: berhasil dijalankan")
+        Log.d(TAG, "onPause: berhasil dijalankan")
     }
 }
